@@ -10,6 +10,7 @@
  * \/ \/ \/
  */
 //#include "usermod_v2_example.h"
+#include "usermod_v2_esp32_cam.h"
 #ifdef USERMOD_DALLASTEMPERATURE
 #include "../usermods/Temperature/usermod_temperature.h"
 #endif
@@ -26,6 +27,7 @@ void registerUsermods()
    * \/ \/ \/
    */
   //usermods.add(new MyExampleUsermod());
+  usermods.add(new Esp32CamUsermod());
   #ifdef USERMOD_DALLASTEMPERATURE
   usermods.add(new UsermodTemperature());
   #endif
